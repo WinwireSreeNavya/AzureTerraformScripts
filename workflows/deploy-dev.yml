@@ -8,7 +8,10 @@ on:
         required: false
   push:
     branches:
-      - main
+      - develop
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   deploy-dev:
